@@ -1,0 +1,13 @@
+/* Style.css */
+
+/* Make the body white with black left and right borders */
+body {
+    background-color: white;
+    border-left: 300px solid black;
+    border-right: 300px solid black;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+

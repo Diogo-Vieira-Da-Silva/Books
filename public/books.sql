@@ -7,6 +7,7 @@ CREATE TABLE books(
     id VARCHAR(50) PRIMARY KEY  not null,   -- ID manual 100%
     Título VARCHAR(50) NOT NULL,
     Autor VARCHAR(50) NOT NULL,
+    gênero varchar(50) not null,
 	Status_Leitura VARCHAR(120) NOT NULL,
     Nota VARCHAR(30) NOT NULL,
     Ano_de_publicação Date NOT NULL
