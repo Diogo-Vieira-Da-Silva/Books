@@ -9,6 +9,12 @@ document.getElementById('usuarioForm').addEventListener('submit', function(e) {
         nome: document.getElementById('nome').value
     };
 
+    // Validar CPF: deve ter exatamente 11 números
+    if (!/^\d{11}$/.test(formData.cpf)) {
+        alert('CPF deve conter exatamente 11 números!');
+        return;
+    }
+
     console.log('Enviando dados:', formData);
 
     fetch('/usuarios', {

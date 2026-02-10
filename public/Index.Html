@@ -30,7 +30,8 @@
                             <div class="mb-4">
                                 <label for="cpf" class="form-label">CPF</label>
                                 <input type="text" class="form-control" id="cpf" 
-                                       placeholder="Digite seu CPF" maxlength="11" required>
+                                       placeholder="Digite seu CPF" maxlength="11" 
+                                       oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
                             </div>
                             <div class="mb-4">
                                 <label for="nome" class="form-label">Nome Completo</label>
