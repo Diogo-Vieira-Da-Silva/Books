@@ -17,11 +17,12 @@
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-8">
                 <div class="card">
-                    <div class="card-header text-center">
+                    <div class="card-header text-center bg-danger">
                         <h3>Dados do Livro</h3>
                     </div>
                     <div class="card-body">
                         <form id="livroForm">
+                            <input type="hidden" id="usuario_id" value="">
                             <div class="mb-4">
                                 <label for="titulo" class="form-label">Título</label>
                                 <input type="text" class="form-control" id="titulo" 
@@ -65,11 +66,12 @@
                                 </select>
                             </div>
                             <div class="d-grid gap-2">
-                                <button type="submit" class="btn btn-primary btn-lg">Cadastrar Livro</button>
+                                <button type="submit" class="btn btn-danger btn-lg">Cadastrar Livro</button>
                             </div>
                         </form>
                         <div class="mt-4 text-center">
                             <a href="/" class="btn btn-secondary btn-lg">Voltar</a>
+                            <a href="/books" class="btn btn-primary btn-lg ms-2">Ver Livros</a>
                         </div>
                     </div>
                 </div>
