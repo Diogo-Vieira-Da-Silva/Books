@@ -29,6 +29,8 @@ document.getElementById('usuarioForm').addEventListener('submit', function(e) {
         console.log('Resposta:', data);
         alert(data);
         document.getElementById('usuarioForm').reset();
+        // Redirecionar para a página de cadastro de livros
+        window.location.href = '/livros.html';
     })
     .catch(error => {
         console.error('Erro:', error);
